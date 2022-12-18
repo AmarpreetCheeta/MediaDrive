@@ -1,0 +1,497 @@
+
+/* Home */
+
+.navbar{
+	background-color: #ffffff;
+}
+
+.main_logo{
+	color: #8A8A8A;
+	font-weight: 550;
+}
+
+.main_logo:hover{
+	color: #8A8A8A;
+}
+
+.form-bor{
+	width: 100%;
+}
+
+.logoimg{
+	width: 45px;
+	height: 45px;
+	margin-bottom: 5px;
+}
+
+.form_input{
+	width: 50rem;
+	margin-left: 2rem;
+	padding: 7px;
+	border: none;
+	border-radius: 10rem;
+	padding-left: 15px;
+	padding-right: 15px;
+	outline: none;
+	font-size: 15px;
+}
+
+.upfgh_7uy{
+	padding-left: 3rem;
+}
+
+.userlogo{
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+}
+
+.pluslogo{
+	width: 30px;
+	height: 30px;
+}
+
+.dropbtn{
+	border: none;
+	background-color: #ffffff;
+	font-size: 18px;
+	width: 130px;
+	font-weight: 550;
+	padding: 10px;
+	border-radius: 10rem;
+	text-align: center;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 4rem;
+  left: 5rem;
+  border-radius: 10px;
+}
+
+.show {display: block;}
+
+.gj_g567{
+  background-color: #ffffff;
+  border: #d3d3d3;
+  min-width: 300px;
+  height: 23rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 10rem;
+  right: 3rem;
+  border-radius: 10px;
+}
+
+.user_fisrt-logo{
+	padding: 10px;
+	text-align: center;
+}
+
+.dropdown-user-logo{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+
+.manage_edit{
+	border-radius: 10rem;
+	background-color: #FDFDFD;
+	font-size: 11px;
+	text-decoration: none;
+	border: 1px solid #DDDDDD;
+	color: #555555;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 8px;
+	padding-bottom: 10px;
+}
+
+.manage_edit:hover{
+	color: #555555;
+}
+
+.signout_89{
+	border-radius: 10rem;
+	background-color: #FDFDFD;
+	font-size: 13px;
+	text-decoration: none;
+	border: 1px solid #DDDDDD;
+	color: #555555;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 5px;
+	padding-bottom: 7px;
+}
+
+.signout_89:hover{
+	color: #555555;
+}
+
+.jklist{
+	padding-right: 30px
+}
+
+.jklist a{
+	display: block;
+	padding: 8px 10px;
+	text-decoration: none;
+	color: #6C6C6C;
+	border-radius: 10rem;
+	font-size: 15px;
+	font-weight: 550;
+	transition: all 0.10s;
+}
+
+.jklist a:hover{
+	background-color: #F5F5F5;
+}
+
+.icon_style{
+	margin-right: 0.5rem;
+	margin-left: 1rem;
+}
+
+.icon_color{
+	color: #6E99CB;
+}
+
+.ioPP_98{
+	position: absolute;
+	position: fixed;
+	width: 17rem;
+	top: 5rem;
+}
+
+.folderinput{
+	width: 100%;
+	padding: 5px;
+	border-radius: 10px;
+	border:none;
+	outline: none;
+	padding-left: 10px
+}
+
+.fileInput{
+	border-style:dotted;
+	border-color: #C8C8C8;
+}
+
+.input_form_modal{
+	width: 400px;
+}
+
+.img_of_folder{
+	width: 80px;
+	height: 80px;
+}
+
+.jik__87{
+	width: 90px;
+}
+
+.jik__87 h6{
+	font-size: 14px;
+}
+
+.hoverdropdown{
+	width: 5%;
+	margin-left: 10px;
+}
+
+.btn_hover{
+	padding: 0px;
+	background-color: #ffffff;
+	border: none;
+}
+
+.hover-content{
+	display: none;
+	position: relative;
+	border: none;
+	width: 190px;
+	background-color: #ffffff;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 7px;
+    right: 8rem;
+}
+
+.hover-content form button, .button_moveto .movebtn{
+	width: 100%;
+	padding: 7px;
+	font-size: 13px;
+	text-align: left;
+	border: none;
+	background-color: #ffffff;
+}
+
+.hover-content form button:hover{
+	background-color: #F5F5F5;
+}
+
+.hover-content .button_moveto .movebtn:hover{
+	background-color: #F5F5F5;
+}
+
+.hover-content .down_files a{
+	display: block;
+	text-decoration: none;
+	padding: 7px 12px;
+	font-size: 13px;
+	text-align: left;
+	background-color: #ffffff;
+}
+
+.hover-content .down_files a:hover{
+	background-color: #F5F5F5;
+}
+
+.hoverMoveToDropdown-content{
+	display: none;
+	position: absolute;
+	border: none;
+	width: 13rem;
+	padding: 3px;
+	overflow: auto;
+	height: 10rem;
+	background-color: #ffffff;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 7px;
+    left: 5rem;
+}
+
+.hoverMoveToDropdown:hover .hoverMoveToDropdown-content{
+	display: block;
+}
+
+.ghujijbtn{
+	width: 100%;
+	padding: 7px;
+	font-size: 13px;
+	text-align: left;
+	border: none;
+	background-color: #ffffff;
+}
+
+.ghujijbtn:hover{
+	background-color: #F5F5F5;
+}
+
+.btn-starred{
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+}
+
+.btn-remove{
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
+.hoverih{
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.hover_lnksa{
+	margin-right: 5px
+}
+
+.hoverdropdown:hover .hover-content{
+	display: block;
+}
+
+.gjufgt{
+	margin-right: 12.4px;
+}
+
+.move-to_folderimg{
+	width: 20px;
+	height: 20px;
+	margin-right: 0.5rem;
+	margin-bottom: 5px
+}
+
+.moveTo_modal{
+	width: 20rem;
+}
+
+.folder_moveBTN{
+	width: 100%;
+	text-align: left;
+	padding: 5px;
+	background-color: #ffffff;
+	border:none;
+	font-size: 13px;
+}
+
+.inner-folder-tyhu{
+	height: 10rem;
+	overflow: auto;
+}
+
+/* End Home */
+
+
+/* Recent */
+
+.clear_recents{
+	border-bottom: #d3d3d3;
+}
+
+.clearrecent_btn{
+	background-color: #ffffff;
+	border:none;
+	font-size: 12px;
+	font-weight: 550;
+}
+
+/* End recent */
+
+
+/* Account */
+
+.udgt7uy{
+	border-radius: 50%;
+	width: 130px;
+	height: 130px;
+}
+
+.user-profileinput{
+	width: 20rem;
+}
+
+.edit_btn_profile{
+	padding: 5px;
+	border:none;
+	width: 100%;
+	background-color: royalblue;
+	color:#ffffff;
+	border-radius: 5px;
+	font-size: 13px;
+}
+
+.btn_remove_img{
+	padding: 5px;
+	border:none;
+	width: 100%;
+	background-color: #E02626;
+	color:#ffffff;
+	border-radius: 5px;
+	font-size: 13px;
+}
+
+.dh7_l32{
+	margin-right: 5px;
+	margin-bottom:3px;
+}
+
+.gjk_4rxc{
+	border-top: 1px solid #DADADA;
+	border-left: 1px solid #DADADA;
+	border-right: 1px solid #DADADA;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.btn-profileupdate{
+	padding: 5px;
+	border:none;
+	border-radius: 5px;
+	color:#ffffff;
+	background-color: royalblue;
+	width: 100px;
+}
+
+.gj8iTG5{
+	margin-bottom: 7rem;
+}
+
+.btn-profilechangepass{
+	padding: 5px;
+	border:none;
+	border-radius: 5px;
+	color:#ffffff;
+	background-color: royalblue;
+	width: 150px;
+}
+
+.dh7_img{
+	width: 80px;
+	height: 80px;
+}
+
+.deleccount_modal{
+	width: 26rem;
+}
+
+.btn_delete_account_permanently{
+	border:none;
+	padding:7px;
+	width: 100%;
+	border-radius: 3px;
+	color: #ffffff;
+	background-color:#EE2A2A;
+	font-size: 13px;
+}
+
+.btn_delete_profile_img{
+	border:none;
+	background-color: #ffffff;
+	color: #D42727;
+	font-size: 13px;
+	font-weight: 550;
+}
+
+/* End Account */
+
+
+.copyright_logo{
+	width: 20px;
+	height: 20px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.gju77uy6{
+	width: 230px;
+	text-align: center;
+}
+
+/* User Account creation or authentication */
+
+.myinput_form{
+	padding: 5px;
+	border:1px solid #E7E7E7;
+	width: 60%;
+	margin-top: 1.5rem;
+	outline: none;
+	border-radius: 4px;
+}
+
+.btnsubmit_{
+	padding: 3px;
+	border:none;
+	background-color: royalblue;
+	color: #ffffff;
+	width: 60%;
+	margin-top: 3rem;
+	border-radius: 4px;
+}
+
+/* End User Account creation or authentication */

@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+{% block title %}
+<title>MediaDrive - Create Account</title>
+{% endblock %}
+{% block content %}
+<div class="container mt-5 mb-5" style="max-width: 30rem;">
+	<div class="gjghu">
+		<div class="text-center">
+			<h4 class="main_logo">
+				<img src="{% static 'images/logo.png' %}" class="mb-2" width="50" height="50">
+				MediaDrive
+			</h4>
+		</div>
+		<div class="mt-2 text-center">
+			<h6 class="text-secondary" style="font-size: 12px;">
+				Have an account? 
+				<a class="text-primary" style="text-decoration: none;" href="{% url 'login' %}">LogIn</a>
+			</h6>
+		</div>
+		{% if messages %}
+		<div class="container mt-4 p-0" style="max-width: 17rem;">
+			{% for msg in messages %}
+			<div class="alert alert-warning alert-dismissible fade show p-0 p-2 m-0" role="alert" style="font-size: 12px;">
+			  {{msg}}
+			  <button type="button" class="btn-close p-0 p-2 mt-1" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+			{% endfor %}
+		</div>
+		{% endif %}
+		<div class="freyegre">
+			<form action="" method="POST" class="text-center">
+				{% csrf_token %}
+				{% for fm in forms %}
+				{{fm}}<br>
+				<small class="text-danger mb-2 mt-2">{{fm.errors|striptags}}</small>
+				{% endfor %}
+				<input type="submit" class="btnsubmit_" value="Sign Up">
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

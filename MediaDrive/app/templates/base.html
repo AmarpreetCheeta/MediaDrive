@@ -1,0 +1,18 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{% static 'images/logo.png' %}" type="image/x-icon">  
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" crossorigin="anonymous">
+    {% block link %}{% endblock %}
+    {% block title %}{% endblock %}
+  </head>
+  <body>
+    {% block content %}
+    {% endblock %}
+    <script src="{% static 'js/bootstrap.js' %}" crossorigin="anonymous"></script>
+    <script src="{% static 'js/popper.js' %}" crossorigin="anonymous"></script>
+  </body>
+</html>

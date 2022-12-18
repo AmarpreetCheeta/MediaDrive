@@ -1,0 +1,47 @@
+{% load static %}
+
+<!-- Create Folder Modal -->
+<div class="modal fade" id="createfolderModal" tabindex="-1" aria-labelledby="CreateFolderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered justify-content-center">
+    <div class="modal-content input_form_modal p-2">
+      <div class="modal-header" style="border: none;">
+        <h6 class="modal-title text-secondary" id="CreateFolderModalLabel">Create new folder</h6>
+      </div>
+      <form action="{% url 'folders_create' %}" method="POST">
+        {% csrf_token %}
+        <div class="modal-body">
+          <input type="text" name="folder_name" placeholder="Enter your folder name" class="folderinput border">
+        </div>
+        <div class="modal-footer" style="border: none;">
+          <button type="button" class="btn btn-light border btn-sm" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary btn-sm">Create folder</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- File Modal -->
+<div class="modal fade" id="fileModal" tabindex="-1" aria-labelledby="CreateFileModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered justify-content-center">
+    <div class="modal-content input_form_modal p-2">
+      <div class="modal-header" style="border: none;">
+        <h6 class="modal-title text-secondary" id="CreateFileModalLabel">Upload file</h6>
+      </div>
+      <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="inputfile" class="form-label">Choose your file</label>
+            {{file_form.file}}
+          </div>
+        </div>
+        <div class="modal-footer" style="border: none;">
+          <button type="button" class="btn btn-light border btn-sm" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary btn-sm">Upload file</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

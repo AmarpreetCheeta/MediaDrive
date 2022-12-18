@@ -1,0 +1,53 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg border p-0 sticky-top">
+  <div class="container" style="max-width: 70rem;">
+    <a class="navbar-brand main_logo" href="{% url 'home' %}">
+    	<img src="{% static 'images/logo.png' %}" class="logoimg">
+    	MediaDrive
+	</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 form-bor">
+        <li class="nav-item">
+          <form action="{% url 'search' %}" method="GET">
+	        <input class="me-2 form_input border" name="search_for" type="search" placeholder="Search your folders and files name" aria-label="Search">
+	      </form>
+        </li>
+      </ul>
+		<div class="nav-item dropdown dropstart">
+          <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          	{% if request.user.image %}
+            <img src="{{request.user.image.url}}" class="userlogo">
+            {% else %}
+            <img src="{% static 'images/user.png' %}" class="userlogo">
+            {% endif %}
+          </a>
+          <ul class="dropdown-menu gj_g567" aria-labelledby="navbarDropdown">
+			<div class="user_fisrt-logo mt-2">
+				{% if request.user.image %}
+				<img src="{{request.user.image.url}}" class="dropdown-user-logo">
+				{% else %}
+				<img src="{% static 'images/user.png' %}" class="dropdown-user-logo">
+				{% endif %}
+			</div>
+			<div class="text-center">
+				<h6 class="text-dark">{{request.user.first_name}}</h6>
+				<h6 class="text-sm text-secondary">{{request.user.email}}</h6>
+				<h6 class="text-sm text-secondary">
+					<svg width="14" height="14" fill="currentColor" class="bi bi-phone-fill mb-1" viewBox="0 0 16 16">
+						<path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0z"/>
+					</svg>
+					 {{request.user.phone}}
+				</h6>
+			</div>
+			<div class="text-center mt-4 pb-1">
+				<a href="{% url 'account' %}" class="manage_edit" role="button">Manage Your MediaDrive Account</a>
+			</div>
+			<hr class="dropdown-divider m-4" style="color: #D3D3D3;">
+			<div class="mt-4 text-center">
+				<a href="{% url 'logout' %}" class="signout_89">Sign Out</a>
+			</div>
+          </ul>
+        </div>
+    </div>
+  </div>
+</nav>
